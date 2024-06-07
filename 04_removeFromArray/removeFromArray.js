@@ -1,6 +1,9 @@
-const removeFromArray = function(array, valueToRemove) {
-    index = array.indexOf(valueToRemove);
-    array.splice(index, 1);
+const removeFromArray = function(array, ...valuesToRemove) {
+    for (const value of valuesToRemove) {
+        index = array.indexOf(value);
+        array.splice(index, 1);
+    }
+
 
     return array;
 };
