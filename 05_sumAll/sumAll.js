@@ -3,10 +3,18 @@ const sumAll = function(start, end) {
         return "ERROR"
     }
     sum = null;
-    for (let i = start; i <= end; i++) {
-        sum += i;
+    if (start > end) {
+        for (let i = end; i <= start; i++) {
+            sum += i;
+        }
+        return sum;
+    } else {
+        for (let i = start; i <= end; i++) {
+            sum += i;
+        }
+        return sum;
     }
-    return sum;
+
 };
 
 // Do not edit below this line
