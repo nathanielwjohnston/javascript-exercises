@@ -1,4 +1,7 @@
 const repeatString = function(string, num) {
+    if (num < 0) {
+        return "ERROR";
+    }
     repeatedString = "";
     for (i = 0; i < num; i++) {
         repeatedString += string;
