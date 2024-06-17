@@ -1,6 +1,11 @@
 const palindromes = function (string) {
-    reverseString = string.split().reverse().join();
-    if (reverseString === string) {
+    letters = "abcdefghijklmnopqrstuvwxyz";
+    alteredString = string
+                        .split("")
+                        .filter(letter => letters.includes(letter))
+                        .join("");
+    reverseString = alteredString.split("").reverse().join("");
+    if (reverseString === alteredString) {
         return true;
     }
     return false;
