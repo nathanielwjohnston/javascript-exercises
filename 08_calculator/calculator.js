@@ -18,8 +18,8 @@ const multiply = function(array) {
   })
 };
 
-const power = function() {
-	
+const power = function(a,b) {
+  return Math.pow(a,b);
 };
 
 const factorial = function() {
