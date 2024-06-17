@@ -3,6 +3,10 @@ const fibonacci = function(num) {
         return 0;
     }
 
+    if (num < 0) {
+        return "OOPS";
+    }
+
     a = 1;
     b = 1;
     for (i = 1; i < num; i++) {
