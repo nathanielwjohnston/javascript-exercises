@@ -1,6 +1,7 @@
 const palindromes = function (string) {
     letters = "abcdefghijklmnopqrstuvwxyz";
     alteredString = string
+                        .toLowerCase()
                         .split("")
                         .filter(letter => letters.includes(letter))
                         .join("");
