@@ -1,5 +1,5 @@
 const palindromes = function (string) {
-    letters = "abcdefghijklmnopqrstuvwxyz";
+    letters = "abcdefghijklmnopqrstuvwxyz0123456789";
     alteredString = string
                         .toLowerCase()
                         .split("")
