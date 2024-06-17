@@ -1,9 +1,9 @@
 const palindromes = function (string) {
-    letters = "abcdefghijklmnopqrstuvwxyz0123456789";
+    alphanumerical = "abcdefghijklmnopqrstuvwxyz0123456789";
     alteredString = string
                         .toLowerCase()
                         .split("")
-                        .filter(letter => letters.includes(letter))
+                        .filter(letter => alphanumerical.includes(letter))
                         .join("");
     reverseString = alteredString.split("").reverse().join("");
     if (reverseString === alteredString) {
